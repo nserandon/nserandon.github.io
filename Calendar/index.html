@@ -18,7 +18,7 @@ body {
 .header {
   padding: 5px;
   text-align: center;
-  background: #034f84;
+  background: #bf2b2b;
   color: white;
 }
 
@@ -86,35 +86,9 @@ body {
 </style>
 </head>
 <body>
-<SCRIPT>
-function passWord() {
-var testV = 1;
-var pass1 = prompt('Please Enter Your Password',' ');
-while (testV < 3) {
-if (!pass1) 
-history.go(-1);
-if (pass1.toLowerCase() == "password") {
-alert('You Got it Right!');
-window.open('https://tserandon.github.io/HighSchool/');
-break;
-} 
-testV+=1;
-var pass1 = 
-prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
-}
-if (pass1.toLowerCase()!="password" & testV ==3) 
-history.go(-1);
-return " ";
-} 
-</SCRIPT>
-<CENTER>
-<FORM>
-<input type="button" value="Enter Protected Area" onClick="passWord()">
-</FORM>
-</CENTER>
  
 <div class="header">
-  <h1>Student's calendar</h1>
+  <h1>Calendrier des élèves</h1>
 </div>
 
 <div class="main">
@@ -123,7 +97,7 @@ return " ";
 </div>
 
 <div class="footer">
-  <a href="https://tserandon.github.io/">Return to home</a>
+  <a href="https://nserandon.github.io/">Return to home</a>
 </div>
 
 

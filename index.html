@@ -17,7 +17,8 @@ body {
 /* Style the header */
 .header {
   padding: 5px;
-  text-align: center;
+  padding-left: 38px;
+  text-align: left;
   background: #034f84;
   color: white;
 }
@@ -58,11 +59,52 @@ body {
 }
 
 /* Change color on hover */
-.navbar a:hover {
+.navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #ddd;
   color: black;
 }
+	
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+	
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
 
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 38px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /* Main column */
 .main {   
@@ -142,17 +184,51 @@ body {
 </div>
   
 <div class="navbar">
-  <a href="CLASSE01" style="width:20%">Classe 01</a>
-  <a href="CLASSE02" style="width:20%">Classe 02</a>
-  <a href="CLASSE03" style="width:20%">Classe 03</a>
-  <a href="CLASSE04" style="width:20%">Classe 04</a>
-  <a href="CLASSE05" style="width:20%">Classe 05</a>
+  <div class="dropdown">
+    <button class="dropbtn">TS1AP
+    </button>
+    <div class="dropdown-content">
+      <a href="TS1AP/MATHS/">Mathématiques</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Term PHCV 
+    </button>
+    <div class="dropdown-content">
+      <a href="TermPHCV/MATHS/">Mathématiques</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Term AP 
+    </button>
+    <div class="dropdown-content">
+      <a href="TermAP/MATHS/">Mathématiques</a>
+	  <a href="TermAP/PC/">Physique-Chimie</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">1ère PHCV 
+    </button>
+    <div class="dropdown-content">
+      <a href="1erePHCV/MATHS/">Mathématiques</a>
+	  <a href="1erePHCV/INFO/">Informatique</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">1ère AP
+    </button>
+    <div class="dropdown-content">
+      <a href="1ereAP/MATHS/">Mathématiques</a>
+	  <a href="1ereAP/INFO/">Informatique</a>
+	  <a href="1ereAP/PC/">Physique-Chimie</a>
+    </div>
+	</div> 
+	<a href="mailto:nserandon@gmail.com" style="float:right">Contact e-mail</a>
 </div>
-
 </div> 
 
 <div class="bcontent">
-  <p text-align="center">(last updated 2020/09/21)</p>
+  <p text-align="center">(last updated 2020/10/04)</p>
 </div> 
 
 </body>
